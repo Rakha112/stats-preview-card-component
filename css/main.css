@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -98,10 +98,69 @@ body {
   border-radius: 0 1rem 1rem 0;
 }
 
-.container .seluruh-konten .konten-gambar img {
+.container .seluruh-konten .konten-gambar .mobile {
+  display: none;
+}
+
+.container .seluruh-konten .konten-gambar .dekstop {
   height: 100%;
   opacity: 75%;
   border-radius: 0 1rem 1rem 0;
   mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 380px) {
+  .container .seluruh-konten {
+    width: 88%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .seluruh-konten .konten-tulisan {
+    margin: 0;
+    padding: 5% 10% 5% 10%;
+    margin-top: 2rem;
+  }
+  .container .seluruh-konten .konten-tulisan h1 {
+    margin-right: -0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .container .seluruh-konten .konten-tulisan .isi {
+    text-align: center;
+    margin-right: -0.5rem;
+  }
+  .container .seluruh-konten .konten-tulisan .konten-bawah {
+    margin-top: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .seluruh-konten .konten-tulisan .konten-bawah .isi-konten-bawah {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  .container .seluruh-konten .konten-gambar {
+    background-color: #aa5cdb;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .container .seluruh-konten .konten-gambar .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    opacity: 75%;
+    mix-blend-mode: multiply;
+  }
+  .container .seluruh-konten .konten-gambar .dekstop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

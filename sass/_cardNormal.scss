@@ -1,0 +1,80 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px red solid;
+    .seluruh-konten {
+        max-width: 1130px;
+        background-color: $card-background;
+        display: flex;
+        border-radius: 1rem;
+        // border: 1px red solid;
+        .konten-tulisan {
+            margin: -1rem;
+            padding: 5% 15% 5% 8%;
+            margin-top: 1rem;
+            // border: 1px red solid;
+            h1 {
+       
+                font-family: 'Inter', sans-serif;
+                color: $main-heading;
+                font-size: 2.3rem;
+                font-weight: 700;
+                margin-right: -3rem;
+                margin-bottom: 2rem;
+                // border: 1px red solid;
+                span {
+                    color: $accent;
+                }
+            }
+            
+            .isi {
+                font-size: 15px;
+                font-family: 'Lexend Deca', sans-serif;
+                line-height: 1.6;
+                color: $main-paragraph;
+                
+                // border: 1px red solid;
+            }
+            .konten-bawah {
+                margin-top: 4rem;
+                display: flex;
+                justify-content: space-between;
+                // border: 1px red solid;
+                .isi-konten-bawah {
+                    // border: 1px red solid;
+                    display: flex;
+                    flex-direction: column;
+                    .tittle {
+                        font-weight: 700;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1.5rem;
+                        color: $main-heading;
+
+                    }
+                    .bawah-tittle{
+                        font-size: 15px;
+                        font-family: 'Lexend Deca', sans-serif;
+                        line-height: 1.6;
+                        color: $stat-headings;
+                    }
+                }
+            }
+        }
+        .konten-gambar {
+            background-color: $accent;
+            border-radius: 0 1rem 1rem 0;
+            .mobile {
+                display: none;
+            }
+            .dekstop {
+                height: 100%;
+                opacity: 75%;
+                border-radius: 0 1rem 1rem 0;
+                mix-blend-mode: multiply;
+            }
+            
+        }        
+    }
+}
