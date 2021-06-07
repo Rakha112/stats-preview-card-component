@@ -94,6 +94,14 @@ body {
 }
 
 .container .seluruh-konten .konten-gambar {
+  background-color: #aa5cdb;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container .seluruh-konten .konten-gambar img {
+  height: 100%;
+  opacity: 75%;
+  border-radius: 0 1rem 1rem 0;
   mix-blend-mode: multiply;
 }
 /*# sourceMappingURL=main.css.map */

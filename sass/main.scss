@@ -23,14 +23,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    // border: 1px red solid;
     .seluruh-konten {
         max-width: 1130px;
         background-color: $card-background;
         display: flex;
         border-radius: 1rem;
+        // border: 1px red solid;
         .konten-tulisan {
             margin: -1rem;
-           padding: 5% 15% 5% 8%;
+            padding: 5% 15% 5% 8%;
             margin-top: 1rem;
             // border: 1px red solid;
             h1 {
@@ -81,7 +83,15 @@ body {
             }
         }
         .konten-gambar {
-            mix-blend-mode: multiply;
+            background-color: $accent;
+            border-radius: 0 1rem 1rem 0;
+            img {
+                height: 100%;
+                opacity: 75%;
+                border-radius: 0 1rem 1rem 0;
+                mix-blend-mode: multiply;
+            }
+            
         }        
     }
 }
