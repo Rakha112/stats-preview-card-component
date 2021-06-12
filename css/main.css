@@ -109,7 +109,7 @@ body {
   mix-blend-mode: multiply;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
   .container .seluruh-konten {
     width: 88%;
     -webkit-box-orient: vertical;
